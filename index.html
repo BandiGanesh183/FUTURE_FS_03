@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesh Events & Decor - Wedding & Birthday Decorations in Anantapur</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Additional styles for corner branding */
+        .corner-brand {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 999;
+            background: linear-gradient(135deg, rgba(232, 67, 147, 0.95), rgba(194, 24, 91, 0.95));
+            backdrop-filter: blur(8px);
+            padding: 12px 20px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: 0 5px 20px rgba(232, 67, 147, 0.3);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            cursor: pointer;
+            animation: slideInLeft 0.6s ease-out;
+        }
+        
+        .corner-brand:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 8px 25px rgba(232, 67, 147, 0.4);
+            background: linear-gradient(135deg, #e84393, #c2185b);
+        }
+        
+        .corner-brand i {
+            font-size: 1.6rem;
+            color: white;
+            animation: float 2s ease-in-out infinite;
+        }
+        
+        .corner-brand .brand-text {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .corner-brand .brand-text h4 {
+            color: white;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin: 0;
+            line-height: 1.2;
+        }
+        
+        .corner-brand .brand-text p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.7rem;
+            margin: 0;
+            font-weight: 400;
+        }
+        
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
+        }
+        
+        /* Responsive for mobile */
+        @media (max-width: 768px) {
+            .corner-brand {
+                bottom: 15px;
+                left: 15px;
+                padding: 8px 15px;
+            }
+            
+            .corner-brand i {
+                font-size: 1.2rem;
+            }
+            
+            .corner-brand .brand-text h4 {
+                font-size: 0.75rem;
+            }
+            
+            .corner-brand .brand-text p {
+                font-size: 0.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Corner Branding -->
+    <div class="corner-brand" onclick="window.location.href='index.html'">
+        <i class="fas fa-leaf"></i>
+        <div class="brand-text">
+            <h4>Ganesh Events & Decor</h4>
+        </div>
+    </div>
+
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-leaf"></i> Ganesh Events & Decor</h1>
+                <p>Anantapur, Andhra Pradesh</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1> Weddings • Birthdays • Every Celebration</h1>
+            <p>Flowers. Balloons. Themes. Whatever You Choose – We Decorate in Anantapur</p>
+            <p><strong>"We make your special day even more special💕."</strong></p>
+            <div class="hero-buttons">
+                <a href="contact.html" class="btn btn-primary"><i class="fas fa-phone"></i> Get Free Quote</a>
+                <a href="https://wa.me/919876543210" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-preview">
+        <div class="container">
+            <h2 class="section-title">Our Decoration Services</h2>
+            <p class="section-subtitle">You choose the theme, colors & flowers - we make it happen</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="gallery2.jpg" alt="Birthday Decor">
+                    <div class="service-info">
+                        <h3><i class="fas fa-birthday-cake"></i> Birthday Decor</h3>
+                        <p>Themed balloon arches, backdrop, cake table setup</p>
+                        <span class="price">Starting ₹20,000</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="gallery36.jpg" alt="Wedding Decor">
+                    <div class="service-info">
+                        <h3><i class="fas fa-ring"></i> Wedding Decor</h3>
+                        <p>Mandap, stage decoration, floral backdrops, lighting</p>
+                        <span class="price">Starting ₹50,000</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="gallery15.jpg" alt="Flower Arrangements">
+                    <div class="service-info">
+                        <h3><i class="fas fa-seedling"></i> Flower Arrangements</h3>
+                        <p>Bouquets, garlands, centerpieces, venue flowers</p>
+                        <span class="price">Starting ₹30,000</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="gallery7.jpg" alt="Balloon Decor">
+                    <div class="service-info">
+                        <h3><i class="fas fa-balloon"></i> Balloon Decor</h3>
+                        <p>Arches, columns, balloon drops, number balloons</p>
+                        <span class="price">Starting ₹10,000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-us">
+        <div class="container">
+            <h2 class="section-title">Why Choose Ganesh Events?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-smile"></i>
+                    <h3>100+ Events</h3>
+                    <p>Successfully decorated across Anantapur</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-flower"></i>
+                    <h3>Fresh Flowers</h3>
+                    <p>Premium quality flowers daily</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-palette"></i>
+                    <h3>Custom Themes</h3>
+                    <p>You choose colors & style</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-truck"></i>
+                    <h3>Any Venue</h3>
+                    <p>We come to your location in Anantapur</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Tell us your vision - we'll decorate it exactly how you want</h2>
+            <div class="cta-buttons">
+                <a href="tel:+9199xxxxxxxx" class="btn btn-call"><i class="fas fa-phone-alt"></i> Call Now: +91 99xxxxxxxx</a>
+                <a href="contact.html" class="btn btn-secondary">Get Free Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-leaf"></i> Ganesh Events & Decor</h3>
+                    <p>Making every celebration unforgettable with flowers, balloons, and themes in Anantapur.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Wedding Decor</li>
+                        <li>Birthday Decor</li>
+                        <li>Flower Arrangements</li>
+                        <li>Balloon Decor</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Anantapur, Andhra Pradesh - 515001</p>
+                    <p><i class="fas fa-phone"></i> +91 99xxxxxxxx</p>
+                    <p><i class="fas fa-envelope"></i> bandiganesh183@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ganesh Events & Decor. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Optional: Add hover effect to corner brand
+        document.addEventListener('DOMContentLoaded', function() {
+            const cornerBrand = document.querySelector('.corner-brand');
+            if (cornerBrand) {
+                cornerBrand.addEventListener('click', function() {
+                    // Smooth scroll to top when clicked
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
